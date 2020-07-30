@@ -22,7 +22,7 @@ server.get("/class", function (req, res){
 server.get("/courses/:id", function (req, res){
     const id = req.params.id;
 
-    return res.render('courses', {items: data})
+    return res.render('courses', {items: data} )
 })
 
 server.listen(5000, function(){
